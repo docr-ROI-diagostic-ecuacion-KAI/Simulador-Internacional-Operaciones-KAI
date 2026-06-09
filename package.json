@@ -1,0 +1,10 @@
+{
+  "name": "simulador-internacional-operaciones-kai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulador Procesos Internacionales Operaciones KAI",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "check": "node --check app.js"
+  }
+}
