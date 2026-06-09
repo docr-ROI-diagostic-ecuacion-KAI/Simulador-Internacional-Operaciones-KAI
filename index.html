@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Procesos Internacionales Operaciones KAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="docroi-page">
+      <header class="docroi-header">
+        <div class="docroi-shell docroi-header-row">
+          <a class="docroi-logo" href="#top" aria-label="DOC ROI">
+            <img src="https://docroi.marketing/wp-content/uploads/2026/04/Logo_1_Doc_ROI.png" alt="DOC ROI" />
+          </a>
+          <nav class="docroi-top-nav" aria-label="Navegacion principal">
+            <a href="#simulador">Simulador</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#resultado">Resultado</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="docroi-hero">
+          <div class="docroi-shell hero-grid">
+            <div class="hero-copy">
+              <p class="docroi-kicker docroi-kicker-dark">DOC ROI - KAI - Operaciones internacionales</p>
+              <h1>Simulador Procesos Internacionales Operaciones KAI</h1>
+              <p>
+                Calculadora formativa para diagnosticar mercado, coste, ruta y decision internacional
+                en un entorno simulado. El alumno aprende cada variable, su tratamiento y su efecto en la salida.
+              </p>
+              <div class="hero-actions">
+                <a class="docroi-btn docroi-btn-light" href="#simulador">Iniciar practica</a>
+                <a class="docroi-btn docroi-btn-soft" href="#proceso">Ver proceso docente</a>
+              </div>
+            </div>
+
+            <aside class="hero-diagnosis" aria-label="Diagnostico docente">
+              <p class="docroi-kicker">Botiquin KAI</p>
+              <h2>Diagnostico operativo simulado</h2>
+              <ul>
+                <li><strong>ROI</strong><span>Coste, margen y viabilidad</span></li>
+                <li><strong>PRO</strong><span>Proceso guiado paso a paso</span></li>
+                <li><strong>CE</strong><span>Decision defendible por equipo</span></li>
+                <li><strong>IA</strong><span>Prompt docente listo para agente</span></li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="docroi-section intro-section" id="proceso">
+          <div class="docroi-shell">
+            <p class="docroi-kicker">Ruta de aprendizaje</p>
+            <h2 class="docroi-section-title">De dato de aula a decision operativa</h2>
+            <div class="learning-flow" aria-label="Flujo didactico">
+              <article>
+                <span>01</span>
+                <strong>Entrada</strong>
+                <p>El alumno introduce variables de producto, mercado, coste o ruta.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <strong>Dato simulado</strong>
+                <p>El sistema cruza tablas docentes equivalentes a Google Sheets.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <strong>Calculo</strong>
+                <p>Se aplican reglas, pesos, formulas y filtros de decision.</p>
+              </article>
+              <article>
+                <span>04</span>
+                <strong>Prescripcion</strong>
+                <p>La salida explica resultado, limites y siguiente accion.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="docroi-section simulator-section" id="simulador">
+          <div class="docroi-shell">
+            <div class="simulator-head">
+              <div>
+                <p class="docroi-kicker" id="practiceKicker">Practica 1</p>
+                <h2 class="docroi-section-title" id="practiceTitle">Radar de mercados internacionales</h2>
+              </div>
+              <div class="mode-badge">Modo simulacion</div>
+            </div>
+
+            <nav class="practice-nav" id="practiceNav" aria-label="Practicas"></nav>
+
+            <div class="work-grid">
+              <section class="docroi-card form-panel">
+                <div class="panel-head">
+                  <div>
+                    <p class="docroi-kicker">Formulario guiado</p>
+                    <h3>Variables de la simulacion</h3>
+                  </div>
+                  <button class="docroi-btn docroi-btn-secondary compact" id="loadDemo" type="button">Cargar ejemplo</button>
+                </div>
+                <p class="practice-intro" id="practiceIntro"></p>
+                <form id="simulatorForm" class="input-grid"></form>
+                <button class="docroi-btn docroi-btn-dark full-width" id="runSimulation" type="button">Calcular y explicar</button>
+              </section>
+
+              <section class="docroi-card result-panel" id="resultado" aria-live="polite">
+                <div class="panel-head">
+                  <div>
+                    <p class="docroi-kicker">Prescripcion docente</p>
+                    <h3>Respuesta explicada</h3>
+                  </div>
+                  <button class="docroi-btn docroi-btn-secondary compact" id="copySummary" type="button">Copiar resumen</button>
+                </div>
+                <div id="resultView" class="result-view"></div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="docroi-section map-section">
+          <div class="docroi-shell">
+            <section class="docroi-card explain-panel">
+              <div class="panel-head">
+                <div>
+                  <p class="docroi-kicker">Mapa del dato</p>
+                  <h3>Como se procesa la practica</h3>
+                </div>
+              </div>
+              <div id="processView" class="process-view"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="docroi-footer">
+        <div class="docroi-shell">
+          <img src="https://docroi.marketing/wp-content/uploads/2026/05/Logo_Negro_DoC_ROI.jpg" alt="DOC ROI" />
+          <p>Simulador Procesos Internacionales Operaciones KAI</p>
+          <p class="legal">La propiedad intelectual del ecosistema Doc ROI pertenece al Ph. D. Jorge Lucio Sanchez Galan.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
